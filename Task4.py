@@ -35,9 +35,10 @@ def S4(k, N, i, t):
         return S4(k, N, i - 1, t)
 
 
-k, N = map(int,input().split())
-print("(iter) S0 = ", S0(k, N))
-print("(rec up ++) S1 = ", S1(k, N, k))
-print("(rec up --) S2 = ", S2(k, N, N))
-print("(rec down ++) S3 = ", S3(k, N, k, 0))
-print("(rec down --) S4 = ", S4(k, N, N, 0))
+if __name__ == "__main__":
+    k, N = map(int, input().split())
+    print("(iter) S0 = ", S0(k, N))
+    print("(rec up ++) S1 = ", S1(k, N, k))
+    print("(rec up --) S2 = ", S2(k, N, N))
+    print("(rec down ++) S3 = ", S3(k, N, k, 0))
+    print("(rec down --) S4 = ", S4(k, N, N, 0))
